@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap");
+:root {
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --bg-heading-btn: hsl(0, 0%, 95%);
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Big shoulders Display", cursive;
+  color: var(--bg-heading-btn);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 0;
+}
+p {
+  font-family: "Lexenda Deca", sans-serif;
+  color: var(--paragraph-color);
+}
+body {
+  background: var(--bg-heading-btn);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.cloumn-1 {
+  background: hsl(31, 77%, 52%);
+  width: 100%;
+  padding: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cloumn-2 {
+  background: hsl(184, 100%, 22%);
+  width: 100%;
+  padding: 50px;
+}
+.cloumn-3 {
+  background: hsl(179, 100%, 13%);
+  width: 100%;
+  padding: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  flex-direction: column;
+  width: auto;
+  margin: 5%;
+}
+.btn {
+  background: var(--bg-heading-btn);
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+}
+.btn:hover {
+  background: transparent;
+  color: var(--bg-heading-btn);
+  border: 1px solid var(--bg-heading-btn);
+  transition: 0.1ss ease-in-out;
+  cursor: pointer;
+}
+.btn-sedan {
+  color: hsl(31, 77%, 52%);
+}
+.btn-suv {
+  color: hsl(184, 100%, 22%);
+}
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+.cloumn-1 img,
+h1,
+p,
+.btn {
+  margin: 15px;
+}
+.cloumn-2 img,
+h1,
+p,
+.btn {
+  margin: 15px;
+}
+.cloumn-3 img,
+h1,
+p,
+.btn {
+  margin: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .cloumn-1 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .cloumn-3 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .cloumn-1,
+  .cloumn-2,
+  .cloumn-3 {
+    height: 480px;
+    width: 300px;
+  }
+  .btn {
+    margin-top: 30px;
+    padding: 10px 30px;
+  }
+}
